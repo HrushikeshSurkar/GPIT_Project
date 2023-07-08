@@ -1,13 +1,15 @@
-mat-sidenav-container {
-    height: 100%;
+.sidebar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-mat-sidenav,
-mat-sidenav-content {
-    padding: 16px;
+.sidebar-container div {
+    font-weight: 500;
+    font-size: x-large;
 }
 
-mat-sidenav {
-    background-color: lightcoral;
-    width: 200px;
+.close-icon {
+    cursor: pointer;
+    margin-right: 20px;
 }

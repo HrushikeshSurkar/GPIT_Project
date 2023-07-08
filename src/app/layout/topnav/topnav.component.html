@@ -1,1 +1,25 @@
-<button mat-button>hello</button>
+<mat-drawer-container class="example-container">
+    <p>
+        <mat-toolbar>
+            <div class="menu-button-container">
+                <button mat-mini-fab (click)="drawer.open()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+
+            <span>LOGO</span>
+
+            <span class="spacer"></span>
+            <div class="profile-button-container">
+                <button mat-mini-fab color="primary">
+                    <mat-icon>person</mat-icon>
+                </button>
+            </div>
+
+        </mat-toolbar>
+    </p>
+
+
+
+</mat-drawer-container>
+<mat-drawer #drawer opened><app-sidebar></app-sidebar></mat-drawer>

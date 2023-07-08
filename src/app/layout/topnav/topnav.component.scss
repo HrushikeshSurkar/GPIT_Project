@@ -1,0 +1,29 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.menu-button-container {
+    margin-right: 10px;
+}
+
+.profile-button-container {
+    margin-right: 20px;
+}
+
+
+// sidebar css
+.example-container {
+    width: 100%;
+    height: 95vh;
+}
+
+mat-drawer {
+    width: 300px;
+}
+
+mat-drawer-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

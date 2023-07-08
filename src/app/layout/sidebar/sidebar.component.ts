@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,10 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
-  showFiller = false;
-  constructor(private router: Router) { }
-  logout() {
-    // Perform logout operations if needed
-    this.router.navigate(['/login']);
+  constructor(private drawer: MatDrawer) { }
+  setDrawer(drawer: MatDrawer) {
+    this.drawer = drawer;
+  }
+
+  closeDrawer() {
+    if (this.drawer) {
+      this.drawer.close();
+    }
   }
 }
