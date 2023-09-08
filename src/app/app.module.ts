@@ -18,6 +18,8 @@ import { ImagesComponent } from './modules/main/images/images.component';
 import { VideosComponent } from './modules/main/videos/videos.component';
 import { TagsComponent } from './modules/main/tags/tags.component';
 import { ThumbnailsComponent } from './modules/main/thumbnails/thumbnails.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ThumbnailsComponent } from './modules/main/thumbnails/thumbnails.compon
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
