@@ -1,6 +1,4 @@
 import { NgModule } from '@angular/core';
-import { MatCheckboxModule } from '@angular/material';
-import { MatButtonModule } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -31,11 +29,12 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 export const MaterialComponents = [
   BrowserModule,
   BrowserAnimationsModule,
-  MatCheckboxModule,
   MatCheckboxModule,
   MatButtonModule,
   MatInputModule,
