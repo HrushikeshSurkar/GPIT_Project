@@ -12,6 +12,12 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { LoginComponent } from './modules/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/modules/material/material.module';
+import { TextComponent } from './modules/main/text/text.component';
+import { AudioComponent } from './modules/main/audio/audio.component';
+import { ImagesComponent } from './modules/main/images/images.component';
+import { VideosComponent } from './modules/main/videos/videos.component';
+import { TagsComponent } from './modules/main/tags/tags.component';
+import { ThumbnailsComponent } from './modules/main/thumbnails/thumbnails.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { MaterialModule } from './shared/modules/material/material.module';
     SidebarComponent,
     TopnavComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    TextComponent,
+    AudioComponent,
+    ImagesComponent,
+    VideosComponent,
+    TagsComponent,
+    ThumbnailsComponent
   ],
   imports: [
     BrowserModule,
