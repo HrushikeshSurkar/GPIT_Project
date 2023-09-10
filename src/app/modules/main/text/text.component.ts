@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { TextService } from 'src/app/shared/api/text.service';
+
 @Component({
   selector: 'app-text',
   templateUrl: './text.component.html',
   styleUrls: ['./text.component.scss']
 })
 export class TextComponent {
-  toppings = new FormControl('');
 
-  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
 }

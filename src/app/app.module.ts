@@ -19,7 +19,7 @@ import { VideosComponent } from './modules/main/videos/videos.component';
 import { TagsComponent } from './modules/main/tags/tags.component';
 import { ThumbnailsComponent } from './modules/main/thumbnails/thumbnails.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { CustomFilterPipe } from './shared/pipes/custom-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ImagesComponent,
     VideosComponent,
     TagsComponent,
-    ThumbnailsComponent
+    ThumbnailsComponent,
+    CustomFilterPipe
   ],
   imports: [
     BrowserModule,
@@ -44,7 +45,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
