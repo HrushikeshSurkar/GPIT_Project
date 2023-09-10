@@ -64,7 +64,7 @@ export const MaterialComponents = [
   MatSnackBarModule,
   MatTableModule,
   MatSortModule,
-  MatPaginatorModule
+  MatPaginatorModule,
 ]
 
 

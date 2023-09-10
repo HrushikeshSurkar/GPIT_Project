@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { TextService } from 'src/app/shared/api/text.service';
 
 @Component({
@@ -8,4 +9,11 @@ import { TextService } from 'src/app/shared/api/text.service';
 })
 export class TextComponent {
 
+  tagData: any
+  tagName: any
+  tagOption: any
+  toppings = new FormControl('');
+  constructor(private data: TextService) {
+    this.tagData = this.data.getData()
+  }
 }
